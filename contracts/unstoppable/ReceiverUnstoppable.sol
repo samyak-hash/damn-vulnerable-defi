@@ -5,10 +5,7 @@ import "@openzeppelin/contracts/interfaces/IERC3156FlashBorrower.sol";
 import "solmate/src/auth/Owned.sol";
 import { UnstoppableVault, ERC20 } from "../unstoppable/UnstoppableVault.sol";
 
-/**
- * @title ReceiverUnstoppable
- * @author Damn Vulnerable DeFi (https://damnvulnerabledefi.xyz)
- */
+
 contract ReceiverUnstoppable is Owned, IERC3156FlashBorrower {
     UnstoppableVault private immutable pool;
 
